@@ -7,11 +7,11 @@ namespace PruebaMacal.Models
 {
     public class Gerente : Empleado
     {
-        public string pagar(int sueldo)
+        public string pagar(int sueldo, string tipo)
         {
             this.pagarSueldo(sueldo);
             string nombreCompleto = this.sayMyName();
-            return "Se pagó el sueldo al Gerente " + nombreCompleto + " Sueldo Pagado: " + sueldo;
+            return "Se pagó el sueldo al "+ tipo + " " + nombreCompleto + " Sueldo Pagado: " + sueldo;
         }
 
     }

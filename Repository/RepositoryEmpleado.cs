@@ -27,7 +27,7 @@ namespace PruebaMacal.Repository
             if (tamano >= index)
             {
                 SubGerente subg = _listaSubGerente[index];
-                return subg.pagar(sueldo);
+                return subg.pagar(sueldo, "Sub Gerente");
             }
             else
             {
@@ -44,7 +44,7 @@ namespace PruebaMacal.Repository
             if (tamano >= index)
             {
                 Gerente ger = _listaGerente[index];
-                return ger.pagar(sueldo);
+                return ger.pagar(sueldo, "Gerente");
             }
             else
             {
