@@ -1,4 +1,7 @@
-# Funcionalidad
+## Respuestas preguntas SQL
+[Click Aqui](https://github.com/matijarag/pruebaMacal/blob/master/mediaForReadme/SQL%20Respuestas.SQL)
+
+# Funcionalidad APP
 ## Lista de gerentes
 ```C#
         public static List<Gerente> _listaGerente = new List<Gerente>()
