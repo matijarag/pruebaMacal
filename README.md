@@ -15,7 +15,7 @@
             new SubGerente(){ Nombre="Edgar", ApellidoPaterno = "Soto", ApellidoMaterno = "Vallejos"}
         };
 ```
-## Método utilizado para pagar al gerente y subgerente ingresando su index de la lista como parámetro
+## Método utilizado para pagar al gerente y subgerente ingresando su index de la lista como parámetro (Estoy utilizando un monto Random para el sueldo)
 
 ```C#
 [HttpGet]
@@ -36,3 +36,11 @@
         }
 ```
 ## Ejecución
+### Pagando a gerente y subgerente con index 1
+![Image](https://github.com/matijarag/pruebaMacal/blob/master/mediaForReadme/pagoId.png)
+### Obtener Gerentes 
+![Image](https://github.com/matijarag/pruebaMacal/blob/master/mediaForReadme/gerentes.png)
+### Obtener Sub Gerentes
+![Image](https://github.com/matijarag/pruebaMacal/blob/master/mediaForReadme/subGerentes.png)
+
+### Lo ideal para la API Sería implementar un JSON Web Token para la validación de los Request, se envía como Bearer "token" en el Header de la consulta, así se puede tener una capa de seguridad para validar la integridad del remitente del request, el JWT debería estar firmado por una Key global de la aplicación. El token no se debe guardar por ningún motivo en caché ni en Local Storage ni debe contener información sensible del negocio, cualquier validación extra debe ser resuelta en el backend de la aplicación.
